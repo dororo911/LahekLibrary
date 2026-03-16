@@ -1,28 +1,43 @@
 # Library / Media Management Web Application
 
-A web application built to manage books and media content with user authentication, profile management, wishlist features, and an admin dashboard.  
-This project started as a PHP website and can also be migrated to Laravel for a more structured and scalable architecture.
+A Laravel-based web application for managing books and media content with authentication, user profiles, wishlist functionality, and an admin dashboard.  
+The project is designed to provide a clean and scalable structure for both user-side and admin-side features.
 
 ## Features
 
-### User Side
+### User Features
 - User registration and login
-- Profile page
-- View book and media details
-- Wishlist system
-- Password recovery
+- Profile management
+- Browse books and media
+- View item details
+- Wishlist functionality
+- Password reset / recovery
 
-### Admin Side
+### Admin Features
 - Admin dashboard
 - Manage users
-- Add and manage books
+- Add, edit, and manage books
 - Edit media content
+
+## Built With
+
+- Laravel 11
+- PHP 8.2+
+- MySQL
+- Blade
+- HTML
+- CSS
+- JavaScript
 
 ## Project Structure
 
 ```text
-admin/      -> Admin pages
-config/     -> Database configuration
-css/        -> Stylesheets
-log/        -> Authentication-related pages
-page/       -> Main user pages
+app/            -> Application logic (models, controllers)
+bootstrap/      -> Framework bootstrap files
+config/         -> Configuration files
+database/       -> Migrations and seeders
+public/         -> Publicly accessible files
+resources/      -> Blade views, CSS, JS
+routes/         -> Web routes
+storage/        -> Logs, cache, uploads
+tests/          -> Automated tests
